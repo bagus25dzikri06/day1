@@ -1,1 +1,4 @@
-Are you ready?
+/* Newton Second Law */
+Input massa = 600, percepatan = 2;
+gaya = massa * percepatan;
+Print("Gaya yang ditimbulkan pada mobil tersebut adalah " + gaya); 

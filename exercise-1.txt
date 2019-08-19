@@ -11,3 +11,12 @@ ELSE IF ((tahun % 4 == 0) AND ((tahun % 100 == 0) AND (tahun % 400 == 0)))
    PRINT("Tahun " + tahun + " juga merupakan tahun kabisat.");
 ELSE
    PRINT("Tahun " + tahun + " bukan merupakan tahun kabisat.");
+
+/* Laundry Day */
+INPUT jumlahPakaian;
+IF (jumlahPakaian == 20)
+   PRINT("Pakaian siap dicuci.");
+ELSE
+   PRINT("Pakaian belum mencapai jumlah maksimum.\n");
+   INPUT jumlahPakaianTambahan;
+   jumlahPakaian += jumlahPakaianTambahan;

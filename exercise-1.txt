@@ -1,9 +1,11 @@
 /* Newton Second Law */
+NUMBER massa, percepatan, gaya;
 INPUT massa = 600, percepatan = 2;
 gaya = massa * percepatan;
 PRINT("Gaya yang ditimbulkan pada mobil tersebut adalah " + gaya);
 
 /* Tahun Kabisat */
+NUMBER tahun;
 INPUT tahun;
 IF ((tahun % 4 == 0) AND (tahun % 100 !== 0))
    PRINT("Tahun " + tahun + " merupakan tahun kabisat.");
@@ -13,6 +15,7 @@ ELSE
    PRINT("Tahun " + tahun + " bukan merupakan tahun kabisat.");
 
 /* Laundry Day */
+NUMBER jumlahPakaian, jumlahPakaianTambahan;
 INPUT jumlahPakaian;
 IF (jumlahPakaian == 20)
    PRINT("Pakaian siap dicuci.");
@@ -20,3 +23,14 @@ ELSE
    PRINT("Pakaian belum mencapai jumlah maksimum.\n");
    INPUT jumlahPakaianTambahan;
    jumlahPakaian += jumlahPakaianTambahan;
+
+/* Periksa Kuku */
+STRING kuku;
+INPUT kuku;
+IF (kuku == 'panjang')
+   PRINT("Guru akan memberikan hukuman.");
+ELSE IF (kuku == 'tidak panjang')
+   PRINT("Guru akan memberikan pujian.");
+ELSE
+   PRINT("Masukan Anda salah. Silakan coba lagi.\n");
+   INPUT kuku;

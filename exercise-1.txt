@@ -1,4 +1,13 @@
 /* Newton Second Law */
-Input massa = 600, percepatan = 2;
+INPUT massa = 600, percepatan = 2;
 gaya = massa * percepatan;
-Print("Gaya yang ditimbulkan pada mobil tersebut adalah " + gaya); 
+PRINT("Gaya yang ditimbulkan pada mobil tersebut adalah " + gaya);
+
+/* Tahun Kabisat */
+INPUT tahun;
+IF ((tahun % 4 == 0) AND (tahun % 100 !== 0))
+   PRINT("Tahun " + tahun + " merupakan tahun kabisat.");
+ELSE IF ((tahun % 4 == 0) AND ((tahun % 100 == 0) AND (tahun % 400 == 0)))
+   PRINT("Tahun " + tahun + " juga merupakan tahun kabisat.");
+ELSE
+   PRINT("Tahun " + tahun + " bukan merupakan tahun kabisat.");

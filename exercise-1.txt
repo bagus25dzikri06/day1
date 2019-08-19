@@ -13,6 +13,7 @@ ELSE IF ((tahun % 4 == 0) AND ((tahun % 100 == 0) AND (tahun % 400 == 0)))
    PRINT("Tahun " + tahun + " juga merupakan tahun kabisat.");
 ELSE
    PRINT("Tahun " + tahun + " bukan merupakan tahun kabisat.");
+END IF
 
 /* Laundry Day */
 NUMBER jumlahPakaian, jumlahPakaianTambahan;
@@ -23,6 +24,7 @@ ELSE
    PRINT("Pakaian belum mencapai jumlah maksimum.\n");
    INPUT jumlahPakaianTambahan;
    jumlahPakaian += jumlahPakaianTambahan;
+END IF
 
 /* Periksa Kuku */
 STRING kuku;
@@ -34,3 +36,4 @@ ELSE IF (kuku == 'tidak panjang')
 ELSE
    PRINT("Masukan Anda salah. Silakan coba lagi.\n");
    INPUT kuku;
+END IF

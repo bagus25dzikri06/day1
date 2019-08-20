@@ -1,7 +1,11 @@
 /* Newton Second Law */
+FUNCTION gaya(NUMBER percepatan, NUMBER massa)
+   percepatan * massa;
+ENDFUNCTION
+
 NUMBER massa, percepatan, gaya;
 INPUT massa = 600, percepatan = 2;
-gaya = massa * percepatan;
+gaya(2, 600);
 PRINT("Gaya yang ditimbulkan pada mobil tersebut adalah " + gaya);
 
 /* Tahun Kabisat */

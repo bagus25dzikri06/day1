@@ -23,3 +23,11 @@ console.log('LOOPING KEDUA');
 for (var angka = batas; angka > 0; angka--) {
   console.log(angka + '- I will become a fullstack developer.');
 }
+
+for (var angka = 1; angka <= 100; angka++) {
+  if (angka % 2 == 0) {
+    console.log('GENAP');
+  } else {
+    console.log('GANJIL');
+  }
+}

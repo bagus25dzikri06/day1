@@ -13,3 +13,13 @@ while (angka > 0) {
   console.log(angka + ' - I will become a fullstack developer.');
   angka -= selisih;
 }
+
+console.log('LOOPING PERTAMA');
+for (var angka = 1; angka <= batas; angka++) {
+  console.log(angka + ' - I love coding.');
+}
+
+console.log('LOOPING KEDUA');
+for (var angka = batas; angka > 0; angka--) {
+  console.log(angka + '- I will become a fullstack developer.');
+}
